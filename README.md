@@ -51,12 +51,12 @@ public class HelloSpringApp {
    2. In HelloSpringApp Class, Change your bean accoranly accordantly
 
 
-## Dependecy Injection:
+## Spring Dependecy Injection:
 1. Constructor Injection: 
 The Team Object now is required to start a training session, The Coach neads a team to start a session type (Team is Complete or incomplete).
 I Added The DEpendency Injection in ConfigFile and in the Coachs constructors.
 
 
-2. Setter 
+2. Setter Injection
 
 
