@@ -10,22 +10,29 @@
     <!-- Define your beans here -->
 	
 	<!--define the dependecy-->
-	<bean id="ATeam"
+	<bean id="ComTeam"
+		class="com.redouaneadr.springdemo.CompleatedTeam">
+	</bean>
+	<bean id="IncomTeam"
 		class="com.redouaneadr.springdemo.IncompleteTeam">
 	</bean>
 	<bean id="ACoach"
 		class="com.redouaneadr.springdemo.FootballCoach">
 		
 		<!--Set up the constructor injection -->
-		<constructor-arg ref="ATeam"></constructor-arg>
+		<constructor-arg ref="ComTeam"></constructor-arg>
+		
+		<!--Inject literal value setter injection -->
+		<property name="teamName" value="Chelsea"></property>
+		<property name="coachName" value="Morinho"></property>
 	</bean>
-	
 	<bean id="myBaseballCoach"
 		class="com.redouaneadr.springdemo.BaseballCoach">
 	
 		<!--Set up setter injection -->
-		<property name="team" ref="ATeam"></property>
+		<property name="team" ref="IncomTeam"></property>
 	</bean>
+	
  
     <bean id="myLoggerConfig" class="com.redouaneadr.springdemo.MyLoggerConfig" init-method="initLogger">
     	<property name="rootLoggerLevel" value="FINE" />

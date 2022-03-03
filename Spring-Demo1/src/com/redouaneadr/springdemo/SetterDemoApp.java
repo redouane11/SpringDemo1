@@ -10,7 +10,7 @@ public class SetterDemoApp {
 				
 				//retrieve bean from spring Container
 				
-				Coach theCoach= context.getBean("myBaseballCoach", Coach.class);
+				Coach theCoach= context.getBean("myBaseballCoach", BaseballCoach.class);
 				//call methods on the bean
 				System.out.println(theCoach.getDailyWorkout());
 				

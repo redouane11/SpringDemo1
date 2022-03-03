@@ -6,6 +6,7 @@ public class TrackCoach implements Coach {
 	private Team team;
 	
 	public TrackCoach(Team theTeam) {
+		System.out.print("constructor TrackCoach");
 		team = theTeam;
 	}
 	

@@ -6,7 +6,7 @@ public class BaseballCoach implements Coach{
 		private Team team;
 		
 		public BaseballCoach() {
-			System.out.println("Baseball coatch is absent.. no-arg constructor");
+			System.out.println("Baseball coach is absent.. no-arg constructor");
 		}
 		
 		// Our setter Method
@@ -20,7 +20,7 @@ public class BaseballCoach implements Coach{
 		@Override
 		public String getDailyWorkout() {
 			
-			return "Spend 30 minutes on batting practice";
+			return "Basball --> Spend 30 minutes on batting practice";
 		}
 
 		@Override

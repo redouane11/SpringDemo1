@@ -10,15 +10,19 @@ public class HelloSpringApp {
 		
 		//retrieve bean from spring Container
 		
-		Coach theCoach= context.getBean("ACoach", Coach.class);
+		FootballCoach theCoach= context.getBean("ACoach", FootballCoach.class);
 		//call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
 		
 		
 		//let's call our new method for team
-		System.out.println(theCoach.getTeam());
-		//close the context
+		//System.out.println(theCoach.getTeam());
 		
+		//let's call our new method for FootballCoach
+		System.out.println(theCoach.getTeamName());
+		System.out.println(theCoach.getCoachName());
+		
+		//close the context
 		
 		context.close();
 
