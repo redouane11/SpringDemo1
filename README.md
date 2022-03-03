@@ -71,3 +71,9 @@ Adding geters and setter in a class, add properties and value in the configFile
 		<property name="coachName" value="Morinho"></property>
 ```
 
+4. Injection Values from a properties file:		
+     Create a properties file and load it int the configFile
+     ```xml
+	<!--Load a propertie file-->
+        <context:property-placeholder location="classpath:/cosch.properties"/>
+    ```
