@@ -6,6 +6,11 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	
+	<!--Load a propertie file-->
+    <context:property-placeholder location="classpath:/cosch.properties"/>
+    
 
     <!-- Define your beans here -->
 	
@@ -23,8 +28,8 @@
 		<constructor-arg ref="ComTeam"></constructor-arg>
 		
 		<!--Inject literal value setter injection -->
-		<property name="teamName" value="Chelsea"></property>
-		<property name="coachName" value="Morinho"></property>
+		<property name="teamName" value="${team.teamName}"></property>
+		<property name="coachName" value="${team.coachName}"></property>
 	</bean>
 	<bean id="myBaseballCoach"
 		class="com.redouaneadr.springdemo.BaseballCoach">
