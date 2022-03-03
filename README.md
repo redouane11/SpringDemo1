@@ -56,7 +56,10 @@ public class HelloSpringApp {
 The Team Object now is required to start a training session, The Coach neads a team to start a session type (Team is Complete or incomplete).
 I Added The DEpendency Injection in ConfigFile and in the Coachs constructors.
 
+Run HelloSpringApp where the FootballCoach bean is created and the team bean is Injected in the constructor.
+
 
 2. Setter Injection
+Run SetterDemoApp where the BaseballCoach bean is created and the team bean is Injected in the the Setter.
 
 
