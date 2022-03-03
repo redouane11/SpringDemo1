@@ -19,7 +19,14 @@
 		<!--Set up the constructor injection -->
 		<constructor-arg ref="ATeam"></constructor-arg>
 	</bean>
-
+	
+	<bean id="myBaseballCoach"
+		class="com.redouaneadr.springdemo.BaseballCoach">
+	
+		<!--Set up setter injection -->
+		<property name="team" ref="ATeam"></property>
+	</bean>
+ 
     <bean id="myLoggerConfig" class="com.redouaneadr.springdemo.MyLoggerConfig" init-method="initLogger">
     	<property name="rootLoggerLevel" value="FINE" />
     	<property name="printedLoggerLevel" value="FINE"/>

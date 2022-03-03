@@ -4,9 +4,19 @@ public class BaseballCoach implements Coach{
 	
 	// Define a private field for dependency
 		private Team team;
-		public BaseballCoach(Team theTeam) {
-			team = theTeam;
+		
+		public BaseballCoach() {
+			System.out.println("Baseball coatch is absent.. no-arg constructor");
 		}
+		
+		// Our setter Method
+		public void setTeam(Team team) {
+			System.out.println("this is from the setter method");
+			this.team = team;
+		}
+
+
+
 		@Override
 		public String getDailyWorkout() {
 			
