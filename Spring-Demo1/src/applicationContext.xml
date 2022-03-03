@@ -8,8 +8,16 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
+	
+	<!--define the dependecy-->
+	<bean id="ATeam"
+		class="com.redouaneadr.springdemo.IncompleteTeam">
+	</bean>
 	<bean id="ACoach"
 		class="com.redouaneadr.springdemo.FootballCoach">
+		
+		<!--Set up the constructor injection -->
+		<constructor-arg ref="ATeam"></constructor-arg>
 	</bean>
 
     <bean id="myLoggerConfig" class="com.redouaneadr.springdemo.MyLoggerConfig" init-method="initLogger">
