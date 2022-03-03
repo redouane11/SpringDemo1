@@ -62,4 +62,12 @@ Run HelloSpringApp where the FootballCoach bean is created and the team bean is 
 2. Setter Injection
 Run SetterDemoApp where the BaseballCoach bean is created and the team bean is Injected in the the Setter.
 
+3. Literal values Injection
+Adding geters and setter in a class, add properties and value in the configFile
+
+```xml
+<!--Inject literal value setter injection -->
+		<property name="teamName" value="Chelsea"></property>
+		<property name="coachName" value="Morinho"></property>
+```
 
