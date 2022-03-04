@@ -16,8 +16,9 @@
 	</bean>
 
 	<bean id="ACoach"
-		class="com.redouaneadr.springdemo.FootballCoach">
-		
+		class="com.redouaneadr.springdemo.FootballCoach"
+		scope="prototype"
+		>
 		<!--Set up the constructor injection -->
 		<constructor-arg ref="ComTeam"></constructor-arg>
 
