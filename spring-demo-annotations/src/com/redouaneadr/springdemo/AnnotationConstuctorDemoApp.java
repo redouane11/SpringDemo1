@@ -2,7 +2,7 @@ package com.redouaneadr.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class AnnotationDemoApp {
+public class AnnotationConstuctorDemoApp {
 
 	public static void main(String[] args) {
 		
@@ -15,6 +15,8 @@ public class AnnotationDemoApp {
 		// call a method on the bean
 		
 		System.out.println(theTeam.getTeamUpdates());
+		
+		System.out.println("\n" + theTeam.getNewlyPlayer());
 
 		// close the context
 		
