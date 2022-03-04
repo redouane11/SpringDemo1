@@ -12,12 +12,15 @@
 	
 	<!--define the dependency-->
 	<bean id="ComTeam"
-		class="com.redouaneadr.springdemo.CompleatedTeam">
+		class="com.redouaneadr.springdemo.CompleatedTeam"
+		init-method="getFixtureFirst"
+		destroy-method="getTeamPreparationStatus"
+		>
 	</bean>
 
 	<bean id="ACoach"
 		class="com.redouaneadr.springdemo.FootballCoach"
-		scope="prototype"
+		
 		>
 		
 		<!--Set up the constructor injection -->
