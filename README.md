@@ -88,8 +88,30 @@ We can explicitly change the scope of the bean in the configFile. For example we
 
 ```xml
 	<bean id="ACoach"
-		class="com.redouaneadr.springdemo.FootballCoach">
-		<scope="prototype"></scope>
+		class="com.redouaneadr.springdemo.FootballCoach"
+		scope="prototype"
+	      >
 	</bean>
 ```
 		
+***
+
+___Bean lifecyle Methods/Hooks:___
+1. We can add custom code during bean initialization 
+	1. Calling custom business logic methods,
+	2. Setting up handles to ressources (db connection, sockets, file ...etc.) 
+2. We can add custom code during bean destruction 
+	1. Calling custom business logic methods,
+	2. Clean up handles to ressources (db connection, sockets, file ...etc.) 
+	
+```xml
+<bean id="ACoach"
+		class="com.redouaneadr.springdemo.FootballCoach"
+		scope="prototype"
+      		init-method="doStartupthing"
+      		destroy-method="DoCleanupthing"
+      >
+	</bean>
+
+```
+***
