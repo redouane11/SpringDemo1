@@ -80,6 +80,8 @@ Adding geters and setter in a class, add properties and value in the configFile
 ***
 
 ___What is Singleton?___
-1. Spring container will create only one bean instance, by defaul.
+1. Spring container will create only **one bean instance, by default**.
 2. It is cached in memory.
 3. All requests for the bean will return a SHARED reference to the same bean.
+
+
