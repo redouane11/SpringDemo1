@@ -115,3 +115,11 @@ ___Bean lifecyle Methods/Hooks:___
 
 ```
 ***
+
+___Spring Annotations:___
+
+1. Add entry to enable component scanning in the config file:
+```xml
+	<context:component-scan base-package="com.redouaneadr.springdemo"></context:component-scan>
+```
+2. Add **@Component("NameofyourBeanID")** for explicit explicit naming
