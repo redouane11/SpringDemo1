@@ -2,12 +2,13 @@ package com.redouaneadr.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Chelsea implements Team{
-	
-	private String name = "Chelsea ";
+	@Value("Chelsea")
+	private String name;
 	
 	
 	
@@ -28,7 +29,7 @@ public class Chelsea implements Team{
 	
 
 	@Autowired
-	public void setExtendedContract(@Qualifier("goalkeeper") Player oldPlayer) {
+	public void setExtendedContract(@Qualifier("striker") Player oldPlayer) {
 		newPlayer = oldPlayer;
 	}
 	@Autowired
@@ -39,7 +40,7 @@ public class Chelsea implements Team{
 	@Override
 	public String getTeamUpdates() {
 		
-		return "\nChelsea ---> We are 2021 Champions league!!";
+		return "\n" + name +"---> We are 2021 Champions league!!";
 	}
 	@Override
 	public String getNewlyPlayer() {
