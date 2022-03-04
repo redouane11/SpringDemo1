@@ -123,3 +123,5 @@ ___Spring Annotations:___
 	<context:component-scan base-package="com.redouaneadr.springdemo"></context:component-scan>
 ```
 2. Add **@Component("NameofyourBeanID")** for explicit explicit naming
+
+* *Note: If we remove the beanId from the @component, Spring will use the the default beanId, which is the class name with lowercase in the first letter.* *
