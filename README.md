@@ -124,4 +124,4 @@ ___Spring Annotations:___
 ```
 2. Add **@Component("NameofyourBeanID")** for explicit explicit naming
 
-* *Note: If we remove the beanId from the @component, Spring will use the the default beanId, which is the class name with lowercase in the first letter.* *
+* *Note: If we remove the beanId from the @component, Spring will use the the default beanId, which is the class name with lowercase in the first letter.*
