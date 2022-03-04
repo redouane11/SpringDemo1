@@ -28,7 +28,7 @@ public class Chelsea implements Team{
 	
 
 	@Autowired
-	public void setExtendedContract(Player oldPlayer) {
+	public void setExtendedContract(@Qualifier("goalkeeper") Player oldPlayer) {
 		newPlayer = oldPlayer;
 	}
 	@Autowired
