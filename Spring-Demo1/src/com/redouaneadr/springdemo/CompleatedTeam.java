@@ -1,6 +1,7 @@
 package com.redouaneadr.springdemo;
 
 public class CompleatedTeam implements Team {
+	
 
 	@Override
 	public String GetTeam() {

@@ -25,7 +25,7 @@
 		class="com.redouaneadr.springdemo.FootballCoach">
 		
 		<!--Set up the constructor injection -->
-		<constructor-arg ref="ComTeam"></constructor-arg>
+		<constructor-arg ref="IncomTeam"></constructor-arg>
 		
 		<!--Inject literal value setter injection -->
 		<property name="teamName" value="${team.teamName}"></property>

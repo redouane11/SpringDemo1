@@ -16,7 +16,7 @@ public class HelloSpringApp {
 		
 		
 		//let's call our new method for team
-		//System.out.println(theCoach.getTeam());
+		System.out.println(theCoach.getTeam());
 		
 		//let's call our new method for FootballCoach
 		System.out.println(theCoach.getTeamName());
