@@ -84,4 +84,12 @@ ___What is Singleton?___
 2. It is cached in memory.
 3. All requests for the bean will return a SHARED reference to the same bean.
 
+We can explicitly change the scope of the bean in the configFile. For example we change here the Singleton default scope to be the prototype scope:
 
+```xml
+	<bean id="ACoach"
+		class="com.redouaneadr.springdemo.FootballCoach">
+		<scope="prototype"></scope>
+	</bean>
+```
+		
