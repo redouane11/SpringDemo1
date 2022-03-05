@@ -127,5 +127,14 @@ ___Spring Annotations:___
 * *Note: If we remove the beanId from the @component, Spring will use the the default beanId, which is the class name with lowercase in the first letter.*
 
 
+***
+
+___What Is Spring MVC?___
+
+[Definition fron Spring website](https://www.baeldung.com/spring-mvc-tutorial):
+
+It's a module of the Spring framework dealing with the Model-View-Controller, or MVC pattern. It combines all the advantages of the MVC pattern with the convenience of Spring.
+
+Spring implements MVC with the front controller pattern using its DispatcherServlet.
 
 
