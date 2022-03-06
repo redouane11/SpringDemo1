@@ -9,8 +9,6 @@
 <p>Spring MVC</p>
 
 
-<a href="team/showForm">Go to team main page</a>
-
-<a href="student/showForm">Go to student form page</a>
+Document received.... Thank you ${student.firstName} ${student.firstName}, we process your request.
 </body>
 </html>

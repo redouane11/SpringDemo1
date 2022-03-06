@@ -13,6 +13,6 @@
 	<input type="text" name="teamName" placeholder="What's your favite football team"/>
 	<input type="submit"/>
 </form>
-
+	
 </body>
 </html>
