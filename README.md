@@ -1,5 +1,5 @@
 # SpringDemo1
-This is the 1st Spring project
+
 ___Hibernate___
 
 Enhanced Entity-Relationship (EER) diagrams are an essential part of the modeling interface in MySQL Workbench.
