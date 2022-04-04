@@ -24,6 +24,7 @@ public class StudentController {
 	};
 	@RequestMapping("/processForm")
 	public String processForm(@ModelAttribute("student") Student theStudent) {
+		
 		return "confirmation-page";
 	}
 	
